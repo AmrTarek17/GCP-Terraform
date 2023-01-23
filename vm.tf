@@ -4,7 +4,7 @@ resource "google_compute_instance" "private-vm" {
   zone         = "${module.network.out_sub2_region}-d"
   allow_stopping_for_update = true
   service_account {
-    #email = google_service_account.gke_management_sa.email
+    email = google_service_account.gke_management_sa.email
     scopes = [ "cloud-platform" ]
   }
   depends_on = [
