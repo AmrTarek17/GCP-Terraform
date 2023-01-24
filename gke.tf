@@ -1,6 +1,6 @@
 resource "google_container_cluster" "app_cluster" {
   name     = "app-cluster"
-  location = "${var.sub1_region}-b"
+  location = "${var.sub1_region}-c"
 
   # We can't create a cluster with no node pool defined, but we want to only use
   # separately managed node pools. So we create the smallest possible default
@@ -71,4 +71,8 @@ resource "google_container_node_pool" "app_cluster_linux_node_pool" {
     max_surge       = 1
     max_unavailable = 0
   }
+  #   timeouts {
+  #   create = "60m"
+  #   delete = "2h"
+  # }
 }
