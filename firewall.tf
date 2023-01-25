@@ -16,15 +16,3 @@ resource "google_compute_firewall" "allow_ssh" {
 
 }
 
-resource "google_compute_firewall" "deny_all" {
-  project     = var.project_name
-  name        = "deny-all"
-  network     = var.vpc_name
-  direction = "EGRESS"
-  source_ranges = [ var.sub1_cidr ]
-  
-  deny {
-    protocol  = "all"
-  }
-
-}
