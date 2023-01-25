@@ -71,8 +71,8 @@ resource "google_container_node_pool" "app_cluster_linux_node_pool" {
     max_surge       = 1
     max_unavailable = 0
   }
-  #   timeouts {
-  #   create = "60m"
-  #   delete = "2h"
-  # }
+    timeouts {
+    create = "60m"
+    delete = "2h"
+  }
 }
