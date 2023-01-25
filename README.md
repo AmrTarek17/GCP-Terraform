@@ -10,8 +10,10 @@ This project contains:
 
 * [Terraform](https://www.terraform.io/)
 * [GCP](https://cloud.google.com)
+* [Docker](https://www.docker.com/)
 * [kubernetes](https://kubernetes.io)
 * [python](https://www.python.org)
+
 
 ## Get Started
 
