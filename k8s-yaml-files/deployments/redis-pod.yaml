@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-pod
+  labels:
+    name: redis-pod
+spec:
+  containers:
+  - name: redis
+    image: eu.gcr.io/eminent-subset-375011/redis:5.0
+    ports:
+    - containerPort: 6379
