@@ -107,3 +107,4 @@ This project contains:
 Now, you can access the Demo App by hitting the Ingress IP 
 
 You can try my deployed demo from [here](http://34.160.145.6/)
+And you can brows my Demo ScreenShots folder from GCP-Terraform/ScreenShots
